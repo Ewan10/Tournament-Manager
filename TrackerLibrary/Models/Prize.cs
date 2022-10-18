@@ -8,6 +8,8 @@ namespace TrackerLibrary.Models
 {
     public class Prize
     {
+        public int Id { get; set; } 
+
         public int PlaceNumber { get; set; } 
 
         public string PlaceName { get; set; }
@@ -31,7 +33,7 @@ namespace TrackerLibrary.Models
 
             decimal prizeNumberValue = 0;
             decimal.TryParse(prizeAmount, out prizeAmountValue);
-            PrizeAmount prizeAmountValue;
+            PrizeAmount = prizeAmountValue;
 
             double prizePercentageValue = 0;
             double.TryParse(prizePercentage, out prizePercentageValue);

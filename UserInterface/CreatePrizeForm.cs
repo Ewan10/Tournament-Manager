@@ -24,9 +24,9 @@ namespace UserInterface
                     prizeAmountValue.Text,
                     prizePercentageValue.Text);
             
-            foreach(IDataConnection connection : Configuration.Connections)
+            foreach(IDataConnection connection in Configuration.Connections)
             {
-                
+                connection.CreatePrize(prize);
             }
             }
         }
